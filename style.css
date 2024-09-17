@@ -1,0 +1,184 @@
+/* General Reset and Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('3d-grunge-room-interior-with-spotlight-smoky-atmosphere-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ececec; /* Light gray text for contrast */
+}
+
+/* Header Styling */
+header {
+    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+    padding: 10px 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and navigation */
+    max-width: 1200px;
+    margin: 0 auto; /* Center header content */
+}
+
+.logo {
+    flex: 0 0 auto; /* Do not grow or shrink */
+}
+
+.logo img {
+    width: 80px; /* Fixed size */
+    height: 80px; /* Fixed size */
+    border-radius: 50%; /* Make the logo circular */
+    object-fit: cover; /* Ensure the logo covers the area */
+}
+
+nav {
+    display: flex;
+    align-items: center; /* Align navigation items vertically */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px; /* Adequate padding for links */
+    color: #bbbbbb; /* Bright cyan for ICT look */
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1em; /* Font size for navigation links */
+    border-radius: 5px; /* Rounded corners */
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 188, 212, 0.2); /* Light cyan background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Main Content Styling */
+main {
+    padding: 40px;
+    max-width: 900px;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+h1 {
+    color: #bbbbbb; /* Bright cyan for main headers */
+    font-size: 3em; /* Emphasize header size */
+    margin-bottom: 20px; /* Space below the header */
+    border-bottom: 3px solid #018786; /* Darker cyan for border */
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #bbbbbb; /* Lighter blue for subheaders */
+    font-size: 2em; /* Slightly larger font size */
+    margin: 30px 0; /* Increased space for separation */
+    border-bottom: 2px solid#bbbbbb; /* Medium blue border */
+    padding-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.2em; /* Slightly larger font size for better readability */
+    color: #bbbbbb; /* Light gray text */
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 15px; /* Space between list items */
+    font-size: 1.3em; /* Larger font size for list items */
+    color: #bbbbbb; /* Light blue text */
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo img {
+        width: 60px; /* Adjust logo size for smaller screens */
+        height: 60px; /* Adjust logo size for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+    }
+
+    nav ul li a {
+        padding: 10px; /* Reduce padding for smaller screens */
+        font-size: 0.9em; /* Smaller font size for navigation links */
+    }
+
+    main {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 2.5em; /* Adjust font size for headers */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust font size for subheaders */
+    }
+
+    p {
+        font-size: 1em; /* Adjust font size for paragraphs */
+    }
+
+    ul li {
+        font-size: 1.1em; /* Adjust font size for list items */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 50px; /* Further reduce logo size for very small screens */
+        height: 50px; /* Further reduce logo size for very small screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+    }
+
+    nav ul li a {
+        padding: 10px; /* Further reduce padding */
+        font-size: 0.8em; /* Smaller font size for navigation links */
+    }
+
+    main {
+        padding: 15px; /* Further reduce padding */
+    }
+
+    h1 {
+        font-size: 2em; /* Further reduce font size for headers */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Further reduce font size for subheaders */
+    }
+
+    p {
+        font-size: 0.9em; /* Further reduce font size for paragraphs */
+    }
+
+    ul li {
+        font-size: 1em; /* Further reduce font size for list items */
+    }
+}
